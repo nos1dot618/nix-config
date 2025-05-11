@@ -96,7 +96,6 @@
     git
     floorp
     tmux
-    clang-tools
     home-manager
     wl-clipboard
   ];
