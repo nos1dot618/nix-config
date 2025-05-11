@@ -5,6 +5,7 @@
     ../../user/app/git/git.nix
     ../../user/app/ssh/ssh.nix
     ../../user/app/tmux/tmux.nix
+    ../../user/app/emacs/emacs.nix
   ];
   
   home.username = "nosferatu";
