@@ -4,6 +4,7 @@
   imports = [
     ../../user/app/git/git.nix
     ../../user/app/ssh/ssh.nix
+    ../../user/app/tmux/tmux.nix
   ];
   
   home.username = "nosferatu";
