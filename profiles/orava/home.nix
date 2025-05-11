@@ -3,6 +3,7 @@
 
   imports = [
     ../../user/app/git/git.nix
+    ../../user/app/ssh/ssh.nix
   ];
   
   home.username = "nosferatu";
