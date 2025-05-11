@@ -9,5 +9,8 @@
       key = "~/Keys/gitlab/gitlab_id_ed25519.pub";
       signByDefault = true;
     };
+    extraConfig = {
+      init.defaultBranch = "master";
+    };
   };
 }
