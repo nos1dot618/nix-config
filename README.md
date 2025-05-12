@@ -19,6 +19,15 @@ Or, install to a fresh NixOS system with the following experimental script:
 nix-shell -p git --command "nix run --experimental-features 'nix-command flakes' gitlab:ninthcircle/dotfiles"
 ```
 
+## Clean up
+
+Remove old generations and old boot menu options:
+
+```bash
+sudo nix-collect-garbage -d
+sudo /run/current-system/bin/switch-to-configuration boot
+```
+
 ## Bookmarks
 
 - https://search.nixos.org/packages
@@ -29,3 +38,4 @@ nix-shell -p git --command "nix run --experimental-features 'nix-command flakes'
 - https://home-manager.dev/manual/23.05/index.html
 - https://www.youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG
 - https://gitlab.com/librephoenix/nixos-config
+- https://www.reddit.com/r/NixOS/comments/10107km/comment/j2lekuj/
