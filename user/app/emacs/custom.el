@@ -8,7 +8,7 @@
    '("09b833239444ac3230f591e35e3c28a4d78f1556b107bafe0eb32b5977204d93"
      default))
  '(package-selected-packages
-   '(markdown-mode multiple-cursors nix-mode pkg smex zenburn-theme)))
+   '(markdown-mode company multiple-cursors nix-mode pkg smex zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
