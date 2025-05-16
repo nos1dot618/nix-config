@@ -8,7 +8,8 @@
     ../../user/app/emacs/emacs.nix
     ../../user/lang/cxx.nix
     ../../user/lang/py.nix
-    ../../user/packages/packages.nix
+    ../../user/packages.nix
+    ../../user/shortcuts.nix
   ];
   
   home.username = "nosferatu";
