@@ -5,6 +5,7 @@
     openjdk
     fastfetch
     zola
+    vscodium-fhs
   ];
 }
 
