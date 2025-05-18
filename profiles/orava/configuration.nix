@@ -2,6 +2,7 @@
 {
   imports = [
     ../../system/hardware-configuration.nix
+    ../../system/network/vpn.nix
     ../../system/packages.nix
   ];
 
