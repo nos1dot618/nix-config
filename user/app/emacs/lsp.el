@@ -16,6 +16,13 @@
 (add-hook 'python-mode-hook #'eglot-ensure)
 (add-hook 'python-mode-hook #'company-mode)
 
+;; clangd for c-mode and c++-mode
+(add-to-list 'eglot-server-programs '((c-mode c++-mode) "clangd"))
+(add-hook 'c-mode-hook #'eglot-ensure)
+(add-hook 'c-mode-hook #'company-mode)
+(add-hook 'c++-mode-hook #'eglot-ensure)
+(add-hook 'c++-mode-hook #'company-mode)
+
 ;; Custom Key bindings
 ;; Calls lsp-format-buffer when in java-mode,
 ;; and calls eglot-format everywhere else
