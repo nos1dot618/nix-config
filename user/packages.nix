@@ -6,6 +6,8 @@
     fastfetch
     zola
     vscodium-fhs
+    gnupg
+    pinentry-curses
   ];
 }
 
