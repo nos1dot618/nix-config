@@ -4,6 +4,8 @@ let
 in {
   home.packages = with pkgs; [
     rofi
+    rofi-bluetooth
+    rofi-network-manager
     # audio
     alsa-utils
     pavucontrol
@@ -46,7 +48,9 @@ in {
         "${mod}+Return" = "exec konsole";
         "${mod}+e" = "exec emacs";
         "${mod}+b" = "exec floorp";
+        "${mod}+p" = "exec pcmanfm";
         "${mod}+w" = "layout tabbed";
+        "${mod}+a" = "exec rofi-settings";
         "${mod}+f" = "fullscreen";
         "${mod}+Shift+space" = "floating toggle";
         "${mod}+Shift+c" = "reload";

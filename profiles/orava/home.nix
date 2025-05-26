@@ -7,10 +7,10 @@
     ../../user/app/ssh/ssh.nix
     ../../user/app/tmux/tmux.nix
     ../../user/app/emacs/emacs.nix
+    ../../user/desktop-applications/desktop-applications.nix
     ../../user/lang/cxx.nix
     ../../user/lang/py.nix
     ../../user/packages/essentials.nix
-    ../../user/shortcuts.nix
   ];
   
   home.username = "nosferatu";
