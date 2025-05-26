@@ -7,7 +7,10 @@
     zola
     vscodium-fhs
     gnupg
-    pinentry-curses
+    pinentry-curses # required for gnupg
+    tree
+    kdePackages.kate
+    wget
   ];
 }
 
