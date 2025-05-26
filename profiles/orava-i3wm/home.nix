@@ -1,0 +1,9 @@
+{ config, pkgs, ... }:
+{
+
+  imports = [
+    ../orava/home.nix
+    ../../user/app/i3/i3.nix
+    ../../user/app/i3status/i3status.nix
+  ];
+}
