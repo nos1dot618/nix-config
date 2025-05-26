@@ -29,7 +29,7 @@
       "wireless _first_" = {
         position = 3;
         settings = {
-          format_up = "<span foreground='#93dc5c' font_weight='bold'>W: (%quality at %essid) IP: %ip</span>";
+          format_up = "<span foreground='#93dc5c' font_weight='bold'>W:%quality at %essid, IP: %ip</span>";
           format_down = "<span foreground='#d12f2c' font_weight='bold'>W: Down</span>";
         };
       };

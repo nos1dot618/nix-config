@@ -5,6 +5,9 @@
     ../../system/devices/touchpad.nix
   ];
 
+  # Added the user to input group for 'libinput-gestures'
+  users.users.nosferatu.extraGroups = [ "networkmanager" "wheel" "input" ];
+
   # Reference: https://nixos.wiki/wiki/I3
   services.xserver = {
     enable = true;

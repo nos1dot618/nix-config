@@ -10,6 +10,9 @@ in {
     pulseaudio
     # wallpaper
     nitrogen
+    # gestures
+    libinput-gestures
+    xdotool
   ];
   # Reference: https://nixos.wiki/wiki/I3
   xsession.windowManager.i3 = {
@@ -29,12 +32,13 @@ in {
         }
       ];
       gaps = {
-        inner = 10;
-        outer = 5;
+        inner = 0;
+        outer = 0;
       };
       startup = [
         { command = "pulseaudio"; }
         { command = "nitrogen --restore"; }
+        { command = "libinput-gestures -v"; }
       ];
       keybindings = {
         "${mod}+q" = "kill";
