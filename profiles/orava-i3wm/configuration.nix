@@ -2,6 +2,7 @@
 {
   imports = [
     ../orava/configuration.nix
+    ../../system/devices/touchpad.nix
   ];
 
   # Reference: https://nixos.wiki/wiki/I3
@@ -24,4 +25,9 @@
     # jack.enable = true;  # Optional, if you need JACK
   };
   security.rtkit.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    light # brightness control
+  ];
+
 }

@@ -4,9 +4,12 @@ let
 in {
   home.packages = with pkgs; [
     rofi
+    # audio
     alsa-utils
     pavucontrol
     pulseaudio
+    # wallpaper
+    nitrogen
   ];
   # Reference: https://nixos.wiki/wiki/I3
   xsession.windowManager.i3 = {
@@ -14,7 +17,6 @@ in {
     package = pkgs.i3-gaps;
     config = {
       modifier = mod;
-      terminal = "konsole";
       fonts = {
         size = 11.0;
       };
@@ -32,11 +34,16 @@ in {
       };
       startup = [
         { command = "pulseaudio"; }
+        { command = "nitrogen --restore"; }
       ];
       keybindings = {
         "${mod}+q" = "kill";
         "${mod}+d" = "exec rofi -show drun";
-        "${mod}+f" = "exec floorp";
+        "${mod}+Return" = "exec konsole";
+        "${mod}+b" = "exec floorp";
+        "${mod}+w" = "layout tabbed";
+        "${mod}+f" = "fullscreen";
+        "${mod}+Shift+space" = "floating toggle";
         "${mod}+Shift+c" = "reload";
         "${mod}+Shift+r" = "restart";
         # Change focus
@@ -79,10 +86,13 @@ in {
         "${mod}+Shift+8" = "move container to workspace 8";
         "${mod}+Shift+9" = "move container to workspace 9";
         "${mod}+Shift+0" = "move container to workspace 10";
-        # pipewire/volume
+        # pipewire/audio-volume
         "XF86AudioRaiseVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ +5%";
         "XF86AudioLowerVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ -5%";
         "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
+        # brightness
+        "XF86MonBrightnessUp" = "exec sudo light -A 5";
+        "XF86MonBrightnessDown" = "exec sudo light -U 5";
       };
     };
   };
