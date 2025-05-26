@@ -16,6 +16,7 @@ in {
     libinput-gestures
     xdotool
   ];
+  
   # Reference: https://nixos.wiki/wiki/I3
   xsession.windowManager.i3 = {
     enable = true;
@@ -37,21 +38,23 @@ in {
         inner = 0;
         outer = 0;
       };
+      
       startup = [
         { command = "pulseaudio"; }
         { command = "nitrogen --restore"; }
         { command = "libinput-gestures -v"; }
       ];
+      
       keybindings = {
         "${mod}+q" = "kill";
         "${mod}+d" = "exec rofi -show drun";
-        "${mod}+Return" = "exec konsole";
         "${mod}+e" = "exec emacs";
         "${mod}+b" = "exec floorp";
         "${mod}+p" = "exec pcmanfm";
         "${mod}+w" = "layout tabbed";
         "${mod}+a" = "exec rofi-settings";
         "${mod}+f" = "fullscreen";
+        "${mod}+Return" = "exec konsole";
         "${mod}+Shift+space" = "floating toggle";
         "${mod}+Shift+c" = "reload";
         "${mod}+Shift+r" = "restart";
