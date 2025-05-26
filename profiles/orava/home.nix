@@ -9,7 +9,7 @@
     ../../user/app/emacs/emacs.nix
     ../../user/lang/cxx.nix
     ../../user/lang/py.nix
-    ../../user/packages.nix
+    ../../user/packages/essentials.nix
     ../../user/shortcuts.nix
   ];
   
