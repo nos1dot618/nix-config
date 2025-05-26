@@ -44,6 +44,7 @@ in {
         "${mod}+q" = "kill";
         "${mod}+d" = "exec rofi -show drun";
         "${mod}+Return" = "exec konsole";
+        "${mod}+e" = "exec emacs";
         "${mod}+b" = "exec floorp";
         "${mod}+w" = "layout tabbed";
         "${mod}+f" = "fullscreen";
