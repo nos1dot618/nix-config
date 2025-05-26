@@ -11,5 +11,18 @@
       terminal = false;
       categories = [ "Development" "IDE" ];
     };
+    moonmoon = {
+      name = "MoonMoon Bluetooth Utility";
+      genericName = "MoonMoon";
+      exec = "bash .local/bin/moonmoon";
+      icon = "bluetooth";
+      type = "Application";
+      categories = [ "Settings" "Utility" ];
+    };
+  };
+
+  home.file.".local/bin/moonmoon" = {
+    source = ../scripts/moonmoon.sh;
+    executable = true;
   };
 }
