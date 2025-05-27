@@ -9,12 +9,14 @@
     ../../user/app/rofi/rofi.nix    
     ../../user/desktop-applications/nucleus-desktop-applications.nix
     ../../user/packages/orava-i3wm-essentials.nix
+    ../../user/packages/temporary-packages.nix
   ];
 
   home.sessionPath = [
     "$HOME/.local/bin"
   ];
 
+  # TODO: This does not work, fix this 
   xdg.mimeApps.defaultApplications = {
     "inode/directory" = "pcmanfm.desktop";
   };

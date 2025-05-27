@@ -15,6 +15,8 @@ in {
     # gestures
     libinput-gestures
     xdotool
+    # playback
+    playerctl
   ];
   
   # Reference: https://nixos.wiki/wiki/I3
@@ -105,6 +107,10 @@ in {
         # brightness
         "XF86MonBrightnessUp" = "exec sudo light -A 5";
         "XF86MonBrightnessDown" = "exec sudo light -U 5";
+        # playerctl
+        "XF86AudioPlay" = "exec playerctl play-pause";
+        "XF86AudioNext" = "exec playerctl next";
+        "XF86AudioPrev" = "exec playerctl previous";
       };
     };
   };
