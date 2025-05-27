@@ -3,9 +3,6 @@ let
   mod = "Mod4";
 in {
   home.packages = with pkgs; [
-    rofi
-    rofi-bluetooth
-    rofi-network-manager
     # audio
     alsa-utils
     pavucontrol
