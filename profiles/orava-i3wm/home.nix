@@ -16,6 +16,9 @@
     "$HOME/.local/bin"
   ];
 
+  # Enable the notification daemon
+  services.dunst.enable = true;
+
   # TODO: This does not work, fix this 
   xdg.mimeApps.defaultApplications = {
     "inode/directory" = "pcmanfm.desktop";

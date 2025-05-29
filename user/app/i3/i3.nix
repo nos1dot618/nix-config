@@ -14,8 +14,10 @@ in {
     xdotool
     # playback
     playerctl
+    # notification
+    libnotify
   ];
-  
+
   # Reference: https://nixos.wiki/wiki/I3
   xsession.windowManager.i3 = {
     enable = true;
