@@ -18,13 +18,13 @@
       nixosConfigurations = {
         orava = nixpkgs.lib.nixosSystem {
           inherit system;
-          modules = [ ./profiles/orava-i3wm/configuration.nix ];
+          modules = [ ./profiles/orava/configuration.nix ];
         };
       };
       homeConfigurations = {
         nosferatu = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./profiles/orava-i3wm/home.nix ];
+          modules = [ ./profiles/orava/home.nix ];
         };
       };
     };
